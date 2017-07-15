@@ -1,0 +1,21 @@
+{
+  "name": "lab-mocha-runner",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test:build": "tsc --project tsconfig.tests.json",
+    "test:watch": "npm run test:build -- --watch",
+    "test": "mocha ./.output/test --colors --recursive --compilers ts:ts-node/register",
+    "build": "tsc"
+  },
+  "author": "art",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "ts-node": "^3.2.0",
+    "typescript": "^2.4.1"
+  }
+}
